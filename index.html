@@ -1,149 +1,221 @@
 <!DOCTYPE html>
 <html lang="zxx">
-    <head>
-        <meta charset="utf-8" />
-        <title>PhonePe</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <meta content="Priva - Insurance Company Website Template" name="description" />
-        <meta content="" name="keywords" />
-        <meta content="" name="author" />
 
-        <!--[if lt IE 9]>
+<head>
+    <meta charset="utf-8" />
+    <title>PhonePe</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <meta content="" name="author" />
+
+    <!--[if lt IE 9]>
             <script src="js/html5shiv.js"></script>
         <![endif]-->
 
-        <!-- CSS Files
+    <!-- CSS Files
     ================================================== -->
-        <link href="css/jpreloader.css" rel="stylesheet" type="text/css">
-        <link id="bootstrap" href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link id="bootstrap-grid" href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
-        <link id="bootstrap-reboot" href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
-        <link href="css/animate.css" rel="stylesheet" type="text/css" />
-        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
-        <link href="css/owl.theme.css" rel="stylesheet" type="text/css" />
-        <link href="css/owl.transitions.css" rel="stylesheet" type="text/css" />
-        <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
-        <link href="css/jquery.countdown.css" rel="stylesheet" type="text/css" />
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/jpreloader.css" rel="stylesheet" type="text/css">
+    <link id="bootstrap" href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link id="bootstrap-grid" href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+    <link id="bootstrap-reboot" href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.transitions.css" rel="stylesheet" type="text/css" />
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.countdown.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 
-        <!-- color scheme -->
-        <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" />
-        <link href="css/coloring.css" rel="stylesheet" type="text/css" />
-        <style>
-            .phonelink{
-                position: fixed; /* Lock location always on the scree */
-                bottom: 0; /* Set to the bottom */
-                right: 0; /* Set to the right */
-                margin: 30px; /* Add space around background */
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" />
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+    <style>
+        .phonelink {
+            position: fixed;
+            /* Lock location always on the scree */
+            bottom: 0;
+            /* Set to the bottom */
+            right: 0;
+            /* Set to the right */
+            margin: 30px;
+            /* Add space around background */
+        }
+        
+        .phoneicon {
+            width: 60px;
+            /* Set width of icon */
+            height: 60px;
+            /* Set height of icon */
+        }
+        
+        @media screen and (max-width: 480px) {
+            .lgscreenphone {
+                display: none;
+                /* On small screens make phone icon disappear */
             }
-            .phoneicon{
-                width:  60px; /* Set width of icon */
-                height: 60px; /* Set height of icon */
+            .mbscreenphone {
+                display: block;
+                /* On small screens make phone icon appear */
             }
-            @media screen and (max-width: 480px){
-                .lgscreenphone{
-                    display: none;  /* On small screens make phone icon disappear */
-                }
-                .mbscreenphone{
-                    display: block; /* On small screens make phone icon appear */
-                }
+        }
+        
+        @media screen and (min-width: 481px) {
+            .mbscreenphone {
+                display: none;
+                /* On large screens make phone icon disappear */
             }
-            @media screen and (min-width: 481px){
-                .mbscreenphone{
-                    display: none; /* On large screens make phone icon disappear */
-                }
-                .lgscreenphone{
-                    display: block; /* On large screens make phone icon appear */
-                }
+            .lgscreenphone {
+                display: block;
+                /* On large screens make phone icon appear */
             }
-            </style>
+        }
+    </style>
 
-    </head>
+</head>
 
-    <body>
-        <div id="wrapper">
-            <div id="topbar" class="text-light">
-                <div class="container">
-                    <div class="topbar-left sm-hide">
-                        <span class="topbar-widget tb-social">
+<body>
+    <div id="wrapper">
+        <div id="topbar" class="text-light">
+            <div class="container">
+                <div class="topbar-left sm-hide">
+                    <span class="topbar-widget tb-social">
                             <a href="#"><i class="fa fa-facebook"></i></a>                          
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
                         </span>
-                    </div>
-                
+                </div>
+
+                <div class="topbar-right">
                     <div class="topbar-right">
-                        <div class="topbar-right">
                         <span class="topbar-widget"><a href="#">Privacy policy</a></span>
                         <span class="topbar-widget"><a href="#">Customer Support</a></span>
                         <span class="topbar-widget"><a href="#">FAQ</a></span>
-                    </div> 
-                    </div>  
-                    <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <!-- header begin -->
+        <header class="transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+
+                                <!-- logo close -->
+                            </div>
+
+                            <div style="padding-top: 20px;" class="de-flex-col">
+                                <div class="h-phone"><span>Need&nbsp;Help?</span><i class="fa fa-phone id-color-secondary"></i> <a style="color: white;" href="tel:+918101396272">+91-8101396272</a> </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
 
-            <!-- header begin -->
-            <header class="transparent">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="de-flex sm-pt10">
-                                <div class="de-flex-col">
-                                    <!-- logo begin -->
-                                    
-                                    <!-- logo close -->
-                                </div>
-                               
-                                <div style="padding-top: 20px;" class="de-flex-col">
-                                    <div class="h-phone"><span>Need&nbsp;Help?</span><i class="fa fa-phone id-color-secondary"></i> <a style="color: white;" href="tel:+918101396272">+91-8101396272</a>                                    </div>
+            <section aria-label="section" class="no-top no-bottom vh-100" style="background-image: url('images/background/17.jpg'); background-attachment: fixed;   background-repeat: no-repeat;">
+
+                <div class="v-center">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 offset-md-7 wow fadeInRight" data-wow-delay=".5s">
+                                <div class="box-rounded padding40 img-shadow" data-bgcolor="rgba(255,255,255,.9)">
+                                    <div class="spacer-10"></div>
+
+
+                                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                                        <ul class="carousel-indicators">
+                                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                            <li data-target="#demo" data-slide-to="1"></li>
+                                            <li data-target="#demo" data-slide-to="2"></li>
+                                        </ul>
+
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="row">
+                                                    <!-- <a href="#" target="_blank">
+                                                        <img src="images/UPI-Lpgo-UPI-Icon-PNG-715x342.png" alt="communaute_metro_qc">
+                                                    </a> -->
+                                                    <a href="http://www.faqdd.qc.ca/" target="_blank">
+                                                        <img src="images/PhonePe_Symbol_PNG.jpg" alt="fond_action">
+                                                    </a>
+                                                    <a href="https://caissesolidaire.coop/" target="_blank">
+                                                        <img src="images/Paytm_Wallet_Symbol_PNG.jpg" alt="desjardins">
+                                                    </a>
+                                                    <a href="http://www.environnement.gouv.qc.ca/cgfv/Fonds-vert.htm" target="_blank">
+                                                        <img src="images/Google-Pay-Logo-Icon-PNG-715x714.png" alt="fondvert">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row">
+                                                    <!-- <a href="https://www.canada.ca/fr/environnement-changement-climatique.html" target="_blank">
+                                                        <img src="https://i.imgur.com/h0oC2lL.png" alt="canada"> -->
+
+                                                    <a href="http://www.faqdd.qc.ca/" target="_blank">
+                                                        <img src="images/PhonePe_Symbol_PNG.jpg" alt="fond_action">
+                                                    </a>
+                                                    <a href="https://caissesolidaire.coop/" target="_blank">
+                                                        <img src="images/Paytm_Wallet_Symbol_PNG.jpg" alt="desjardins">
+                                                    </a>
+                                                    <a href="http://www.environnement.gouv.qc.ca/cgfv/Fonds-vert.htm" target="_blank">
+                                                        <img src="images/Google-Pay-Logo-Icon-PNG-715x714.png" alt="fondvert">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </a>
+
+                                    </div>
+
+
+
+                                    <h2>
+                                        Call Now To Get Refund
+                                    </h2>
+
+                                    <form name="contactForm" id='contact_form' class="form-border" method="post" action='#'>
+                                        <div class="field-set">
+                                            <input type='text' name='Name' id='Name' class="form-control" placeholder="Enter Your Name">
+                                        </div>
+                                        <div class="field-set">
+                                            <input type='text' name='Email' id='Email' class="form-control" placeholder="Enter Your Email">
+                                        </div>
+                                        <div class="field-set">
+                                            <input type='text' name='number' id='number' class="form-control" placeholder="Enter Your Number">
+                                        </div>
+
+                                        <div class="field-set">
+                                            <input type='submit' id='send_message' value='Submit' class="btn btn-custom invert btn-fullwidth color-2">
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
-            <!-- header close -->
-            <!-- content begin -->
-            <div class="no-bottom no-top" id="content">
-                <div id="top"></div>
+            </section>
 
-                <section aria-label="section" class="no-top no-bottom vh-100" style="background-image: url('images/background/17.jpg'); background-attachment: fixed;   background-repeat: no-repeat;">
-                    <div class="v-center">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-lg-5 offset-md-7 wow fadeInRight" data-wow-delay=".5s">
-                                    <div class="box-rounded padding40 img-shadow" data-bgcolor="rgba(255,255,255,.9)">
-                                        <div class="spacer-10"></div>
-                                        <h2>
-                                            Call Now To Get Refund
-                                        </h2>
-
-                                        <form name="contactForm" id='contact_form' class="form-border" method="post" action='#'>
-                                            <div class="field-set">
-                                                <input type='text' name='Name' id='Name' class="form-control" placeholder="Enter Your Name">
-                                            </div>
-                                            <div class="field-set">
-                                                <input type='text' name='Email' id='Email' class="form-control" placeholder="Enter Your Email">
-                                            </div>
-                                                <div class="field-set">
-                                                    <input type='text' name='number' id='number' class="form-control" placeholder="Enter Your Number">
-                                                </div>
-
-                                                <div class="field-set">
-                                                    <input type='submit' id='send_message' value='Submit' class="btn btn-custom invert btn-fullwidth color-2">
-                                                </div>
-                                                
-                                                <div class="clearfix"></div>
-                                    </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- <section aria-label="section" class="no-top no-bottom vh-100 text-light text-center" data-bgimage="url(images/background/19.jpg) top">
+            <!-- <section aria-label="section" class="no-top no-bottom vh-100 text-light text-center" data-bgimage="url(images/background/19.jpg) top">
                     <div class="v-center">
                         <div class="container">
                             <div class="row align-items-center">
@@ -185,7 +257,7 @@
                         </div>
                     </div>
                 </section> -->
-           
+
             <section class="relative z1000">
                 <div class="container">
                     <div class="row mt-100">
@@ -196,8 +268,8 @@
                                         <h3><i class="icofont-check-circled"></i><span>Online Payment</span></h3>
                                         <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                         <div class="spacer20"></div>
-                                <a href="tel:+918101396272" class="btn-custom invert med">Contact Us</a>
-                                      
+                                        <a href="tel:+918101396272" class="btn-custom invert med">Contact Us</a>
+
                                     </div>
                                 </div>
                                 <img src="images/misc/f1.jpg" alt="" class="img-responsive" />
@@ -210,10 +282,10 @@
                                     <div class="c-inner">
                                         <h3><i class="icofont-check-circled"></i><span>Quick Claims</span></h3>
                                         <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                       
+
                                         <div class="spacer20"></div>
-                                <a href="tel:+918101396272" class="btn-custom invert med">Contact Us</a>
-                                      
+                                        <a href="tel:+918101396272" class="btn-custom invert med">Contact Us</a>
+
                                     </div>
                                 </div>
                                 <img src="images/misc/f2.jpg" alt="" class="img-responsive" />
@@ -227,8 +299,8 @@
                                         <h3 style="font-size: 17px;"><i class="icofont-check-circled"></i><span>100% Money Return Guarantee</span></h3>
                                         <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                         <div class="spacer20"></div>
-                                <a href="tel:+918101396272" class="btn-custom invert med">Contact Us</a>
-                                      
+                                        <a href="tel:+918101396272" class="btn-custom invert med">Contact Us</a>
+
                                     </div>
                                 </div>
                                 <img src="images/misc/f3.jpg" alt="" class="img-responsive" />
@@ -237,31 +309,31 @@
                     </div>
                 </div>
             </section>
-                <section  data-bgimage="url(images/background/21.jpg) top" class="text-light">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h2><span class="id-color-secondary">Call us</span> Only Online Transaction Related Enquiry Service Center Call Now 24/7 Days Available <span class="id-color-secondary">Anytime</span>.</h2>
-                                <p class="lead">We're available for 24 hours!</p>
-                            </div>
+            <section data-bgimage="url(images/background/21.jpg) top" class="text-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2><span class="id-color-secondary">Call us</span> Only Online Transaction Related Enquiry Service Center Call Now 24/7 Days Available <span class="id-color-secondary">Anytime</span>.</h2>
+                            <p class="lead">We're available for 24 hours!</p>
+                        </div>
 
-                            <div class="col-md-6 text-lg-center text-sm-center">
-                                <div class="phone-num-big">
-                                    <i class="fa fa-phone id-color"></i>
-                                    <span class="pnb-text">
+                        <div class="col-md-6 text-lg-center text-sm-center">
+                            <div class="phone-num-big">
+                                <i class="fa fa-phone id-color"></i>
+                                <span class="pnb-text">
                                         Call Us Now
                                     </span>
-                                    <span class="pnb-num">
+                                <span class="pnb-num">
                                         <a href="tel:+918101396272">+918101396272</a>
 
                                     </span>
-                                </div>
-                                <a href="tel:+918101396272" class="btn-custom invert med">Contact Us</a>
                             </div>
+                            <a href="tel:+918101396272" class="btn-custom invert med">Contact Us</a>
                         </div>
                     </div>
-                </section>
-                <section id="section-testimonial">
+                </div>
+            </section>
+            <!-- <section id="section-testimonial">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
@@ -346,133 +418,139 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <section aria-label="section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <span class="p-title invert">Frequently</span><br>
-                                <h2>Asked Qustions</h2>
-                                <div class="small-border"></div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <!-- Accordion -->
-                                <div id="accordion-1" class="accordion">
-
-                                    <!-- Accordion item 1 -->
-                                    <div class="card">
-                                        <div id="heading-a1" class="card-header bg-white shadow-sm border-0">
-                                            <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-a1" aria-expanded="false" aria-controls="collapse-a1" class="d-block position-relative text-dark collapsible-link py-2">When is time to update my coverage?</a></h6>
-                                        </div>
-                                        <div id="collapse-a1" aria-labelledby="heading-a1" data-parent="#accordion-1" class="collapse">
-                                            <div class="card-body p-4">
-                                                <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Accordion item 2 -->
-                                    <div class="card">
-                                        <div id="heading-a2" class="card-header bg-white shadow-sm border-0">
-                                            <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-a2" aria-expanded="false" aria-controls="collapse-a2" class="d-block position-relative collapsed text-dark collapsible-link py-2">How often should I review my life insurance needs?</a></h6>
-                                        </div>
-                                        <div id="collapse-a2" aria-labelledby="heading-a2" data-parent="#accordion-1" class="collapse">
-                                            <div class="card-body p-4">
-                                                <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Accordion item 3 -->
-                                    <div class="card">
-                                        <div id="heading-a3" class="card-header bg-white shadow-sm border-0">
-                                            <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-a3" aria-expanded="false" aria-controls="collapse-a3" class="d-block position-relative collapsed text-dark collapsible-link py-2">What happen to my insurance if I stop paying?</a></h6>
-                                        </div>
-                                        <div id="collapse-a3" aria-labelledby="heading-a3" data-parent="#accordion-1" class="collapse">
-                                            <div class="card-body p-4">
-                                                <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            
-
-                            <div class="col-md-6">
-                                <!-- Accordion -->
-                                <div id="accordion-2" class="accordion">
-
-                                    <!-- Accordion item 1 -->
-                                    <div class="card">
-                                        <div id="heading-b1" class="card-header bg-white shadow-sm border-0">
-                                            <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-b1" aria-expanded="false" aria-controls="collapse-b1" class="d-block position-relative text-dark collapsible-link py-2">How much life insurance do i need?</a></h6>
-                                        </div>
-                                        <div id="collapse-b1" aria-labelledby="heading-b1" data-parent="#accordion-2" class="collapse">
-                                            <div class="card-body p-4">
-                                                <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Accordion item 2 -->
-                                    <div class="card">
-                                        <div id="heading-b2" class="card-header bg-white shadow-sm border-0">
-                                            <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-b2" aria-expanded="false" aria-controls="collapse-b2" class="d-block position-relative collapsed text-dark collapsible-link py-2">What makes this company different form other?</a></h6>
-                                        </div>
-                                        <div id="collapse-b2" aria-labelledby="heading-b2" data-parent="#accordion-2" class="collapse">
-                                            <div class="card-body p-4">
-                                                <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Accordion item 3 -->
-                                    <div class="card">
-                                        <div id="heading-b3" class="card-header bg-white shadow-sm border-0">
-                                            <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-b3" aria-expanded="false" aria-controls="collapse-b3" class="d-block position-relative collapsed text-dark collapsible-link py-2">Do I need a life insurance policy?</a></h6>
-                                        </div>
-                                        <div id="collapse-b3" aria-labelledby="heading-b3" data-parent="#accordion-2" class="collapse">
-                                            <div class="card-body p-4">
-                                                <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                </section> -->
+            <section aria-label="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <span class="p-title invert">Frequently</span><br>
+                            <h2>Asked Qustions</h2>
+                            <div class="small-border"></div>
                         </div>
+
+                        <div class="col-md-6">
+                            <!-- Accordion -->
+                            <div id="accordion-1" class="accordion">
+
+                                <!-- Accordion item 1 -->
+                                <div class="card">
+                                    <div id="heading-a1" class="card-header bg-white shadow-sm border-0">
+                                        <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-a1" aria-expanded="false" aria-controls="collapse-a1" class="d-block position-relative text-dark collapsible-link py-2">When is time to update my coverage?</a></h6>
+                                    </div>
+                                    <div id="collapse-a1" aria-labelledby="heading-a1" data-parent="#accordion-1" class="collapse">
+                                        <div class="card-body p-4">
+                                            <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordion item 2 -->
+                                <div class="card">
+                                    <div id="heading-a2" class="card-header bg-white shadow-sm border-0">
+                                        <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-a2" aria-expanded="false" aria-controls="collapse-a2" class="d-block position-relative collapsed text-dark collapsible-link py-2">How often should I review my life insurance needs?</a></h6>
+                                    </div>
+                                    <div id="collapse-a2" aria-labelledby="heading-a2" data-parent="#accordion-1" class="collapse">
+                                        <div class="card-body p-4">
+                                            <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordion item 3 -->
+                                <div class="card">
+                                    <div id="heading-a3" class="card-header bg-white shadow-sm border-0">
+                                        <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-a3" aria-expanded="false" aria-controls="collapse-a3" class="d-block position-relative collapsed text-dark collapsible-link py-2">What happen to my insurance if I stop paying?</a></h6>
+                                    </div>
+                                    <div id="collapse-a3" aria-labelledby="heading-a3" data-parent="#accordion-1" class="collapse">
+                                        <div class="card-body p-4">
+                                            <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <!-- Accordion -->
+                            <div id="accordion-2" class="accordion">
+
+                                <!-- Accordion item 1 -->
+                                <div class="card">
+                                    <div id="heading-b1" class="card-header bg-white shadow-sm border-0">
+                                        <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-b1" aria-expanded="false" aria-controls="collapse-b1" class="d-block position-relative text-dark collapsible-link py-2">How much life insurance do i need?</a></h6>
+                                    </div>
+                                    <div id="collapse-b1" aria-labelledby="heading-b1" data-parent="#accordion-2" class="collapse">
+                                        <div class="card-body p-4">
+                                            <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordion item 2 -->
+                                <div class="card">
+                                    <div id="heading-b2" class="card-header bg-white shadow-sm border-0">
+                                        <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-b2" aria-expanded="false" aria-controls="collapse-b2" class="d-block position-relative collapsed text-dark collapsible-link py-2">What makes this company different form other?</a></h6>
+                                    </div>
+                                    <div id="collapse-b2" aria-labelledby="heading-b2" data-parent="#accordion-2" class="collapse">
+                                        <div class="card-body p-4">
+                                            <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordion item 3 -->
+                                <div class="card">
+                                    <div id="heading-b3" class="card-header bg-white shadow-sm border-0">
+                                        <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-b3" aria-expanded="false" aria-controls="collapse-b3" class="d-block position-relative collapsed text-dark collapsible-link py-2">Do I need a life insurance policy?</a></h6>
+                                    </div>
+                                    <div id="collapse-b3" aria-labelledby="heading-b3" data-parent="#accordion-2" class="collapse">
+                                        <div class="card-body p-4">
+                                            <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </section>
-            </div>
-            <!-- content close -->
+                </div>
+            </section>
         </div>
+        <!-- content close -->
+    </div>
 
-       
 
-        <!-- Javascript Files
+
+    <!-- Javascript Files
     ================================================== -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jpreLoader.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery.isotope.min.js"></script>
-        <script src="js/easing.js"></script>
-        <script src="js/owl.carousel.js"></script>
-        <script src="js/validation.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/enquire.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.plugin.js"></script>
-        <script src="js/typed.js"></script>
-        <script src="js/jquery.countTo.js"></script>
-        <script src="js/jquery.countdown.js"></script>
-        <script src="js/typed.js"></script>
-        <script src="js/designesia.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jpreLoader.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/enquire.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/designesia.js"></script>
 
-        <script>
-        $(function () {
+    <script>
+        $(function() {
             // jquery typed plugin
             $(".typed").typed({
                 stringsElement: $('.typed-strings'),
@@ -482,12 +560,17 @@
                 contentType: 'html', // or text
                 // defaults to false for infinite loop
                 loopCount: false,
-                callback: function () { null; },
-                resetCallback: function () { newTyped(); }
+                callback: function() {
+                    null;
+                },
+                resetCallback: function() {
+                    newTyped();
+                }
             });
         });
-    </script>       
-<a class="lgscreenphone phonelink" href="tel:+918101396272"><img class="phoneicon" src="https://freeiconshop.com/wp-content/uploads/edd/phone-flat.png"></a>
-<a class="mbscreenphone phonelink" href="tel:+918101396272"><img class="phoneicon" src="https://freeiconshop.com/wp-content/uploads/edd/phone-flat.png"></a>
-    </body>
+    </script>
+    <a class="lgscreenphone phonelink" href="tel:+918101396272"><img class="phoneicon" src="https://freeiconshop.com/wp-content/uploads/edd/phone-flat.png"></a>
+    <a class="mbscreenphone phonelink" href="tel:+918101396272"><img class="phoneicon" src="https://freeiconshop.com/wp-content/uploads/edd/phone-flat.png"></a>
+</body>
+
 </html>
